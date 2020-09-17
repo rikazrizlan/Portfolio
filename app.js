@@ -16,6 +16,7 @@ function closeNav() {
     //parentSibling2.classList.toggle("banner-dark");
 //});
 
+/*
 const texts = ['HTML5','CSS3','JavaScript','Bootstrap','AdobeXD','Figma'];
 
 let index = 0; //indexes of the elements in the array
@@ -43,3 +44,4 @@ let letter = '';
     setTimeout(type, 250);
 
 }());
+*/
