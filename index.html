@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Rikaz's Portfolio Site</title>
+</head>
+<body>
+    
+    <section class="banner" id="home">
+        <!--<button class="dark-mode">Turn On Dark Mode</button>-->
+        <header onclick="openNav()"><i class="fas fa-arrow-right"></i></header>
+        <div class="content">
+            <h2>RIKAZ RIZLAN<br>
+             <span class="fancy">Front-end Developer & Designer</span></h2>
+            <!--<a href="#about">Know More</a>-->
+        </div>
+        <ul class="sci">
+            <li><a href="https://www.linkedin.com/in/rikaz-rizlan-778401195/"><img src="./Images/linkedin.png" alt=""></a></li>
+            <li><a href="https://twitter.com/itsjustrikaz"><img src="./Images/twitter.png" alt=""></a></li>
+            <li><a href="https://github.com/rikazrizlan"><img src="./Images/github-logo.png" alt=""></a></li>
+        </ul>
+    </section>
+    <section class="banner" id="about">
+        <div class="content">
+            <h2>About Me<br>
+             <span class="info"></span></h2><br>
+             <br>
+            <p>I'm a Software Engineering student interested in building creative projects.<br>
+                Currently aspiring to become a Front-end Developer.<br>
+                I have a passion for tech, and commited to life-long learning in this field.<br>
+                Looking forward to serve a greater mission.</p>
+            <p>Skills:<span class="typing"></span></p>
+        </div>
+    </section>
+    <section class="banner" id="work">
+        <div class="content">
+            <h2>Work</h2><br>
+        <div class="gallery">
+            <a href="https://rikzgrocerylist.netlify.app/"><img src="./Images/Grocery List.png" alt=""></a>
+            <a href="https://minimalistfashion.netlify.app/"><img src="./Images/2020-07-07.png" alt=""></a>
+            <a href="https://mrmac.netlify.app/"><img src="./Images/travellandingpage.png" alt=""></a>
+            <a href="https://rikzbooklist.netlify.app/"><img src="./Images/BookList.png" alt=""></a>
+        </div>
+        </div>
+    </section>
+    <section class="banner" id="contact">
+        <div class="content">
+            <h2>Contact<br>
+                <br>
+            <span class="info">Email: rikzrikaz@gmail.com<br>
+            Phone: (+94)76 278 8630</span></h2>
+            <!--<a href="#home">Back To Top</a>-->
+        </div>
+
+        <ul class="sci">
+            <li><a href="https://www.linkedin.com/in/rikaz-rizlan-778401195/"><img src="./Images/linkedin.png" alt=""></a></li>
+            <li><a href="https://twitter.com/itsjustrikaz"><img src="./Images/twitter.png" alt=""></a></li>
+            <li><a href="https://github.com/rikazrizlan"><img src="./Images/github-logo.png" alt=""></a></li>
+        </ul>
+    </section>
+
+    <div class="sidenav" id="mySidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-arrow-left"></i></a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    
+
+    <script src="./app.js"></script>   
+</body>
+</html>
