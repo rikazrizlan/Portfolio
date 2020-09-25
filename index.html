@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./scroll.css">
     <title>Rikaz's Portfolio Site</title>
 </head>
 <body>
@@ -13,7 +14,7 @@
         <!--<button class="dark-mode">Turn On Dark Mode</button>-->
         <header onclick="openNav()"><img class="arrow-right" src="./Images/arrow.png" alt="arrow"></header>
         <div class="content">
-            <h2>Hi, I'm Rikaz Rizlan<br>
+            <h2 class="show-on-scroll">Hi, I'm Rikaz Rizlan<br>
              <span class="fancy">Frontend Developer & Designer</span></h2>
             <a href="https://rikzrikaz.myportfolio.com/">View My Design Portfolio</a>
         </div>
@@ -27,25 +28,56 @@
     </section>
     <section class="banner" id="about">
         <div class="content">
-            <h2>About Me<br>
+            <h2 class="show-on-scroll">About Me<br>
              <span class="info"></span></h2><br>
              <br>
-            <p> Hello, I’m a frontend developer and UI/UX designer
+            <p class="show-on-scroll"> Hello, I’m a frontend developer and UI/UX designer
                 with 1+ years of hands on experience learning and building projects.<br>
                 <br>
-                I’m looking for an Internship or Junior position to expand 
-                my knowledge and soft skills.</p>
-            <p>Skills & Tools: HTML5  CSS3  JavaScript  Bootstrap  jQuery  Git  npm  AdobeXD  Figma <!--<span class="typing"></span>--></p>
+                I’m looking for an Internship or Junior position to utilize my coding & design skills for the growth of an organization as well as to expand 
+                my knowledge and soft skills.<br>
+            <br>
+            <b>Skills & Tools</b></p>
+            <!--<p>Skills & Tools: HTML5  CSS3  JavaScript  Bootstrap  jQuery  Git  npm  AdobeXD  Figma--> <!--<span class="typing"></span>--></p>
+            <div class="parent-container show-on-scroll">
+            <div class="skill-container">
+                <img src="./Images/html5-logo-EF92D240D7-seeklogo.com.png" alt="">
+            </div>
+            <div class="skill-container">
+                <img src="./Images/css3-logo-8724075274-seeklogo.com.png" alt="">
+            </div>
+            <div class="skill-container">
+                <img src="./Images/javascript-js-logo-2949701702-seeklogo.com.png" alt="">
+            </div>
+            <div class="skill-container">
+                <img src="./Images/bootstrap-logo-3C30FB2A16-seeklogo.com.png" alt="">
+            </div>
+            <div class="skill-container">
+                <img src="./Images/npm-node-package-manager-logo-DE93649ED1-seeklogo.com.png" alt="">
+            </div>
+            <div class="skill-container">
+                <img src="./Images/git-logo-CD8D6F1C09-seeklogo.com.png" alt="">
+            </div>
+            <div class="skill-container">
+                <img src="./Images/visual-studio-code-logo-449D71944F-seeklogo.com.png" alt="Visual Studio Code">
+            </div>
+            <div class="skill-container">
+                <img src="./Images/adobe-xd-logo-39468DE5D4-seeklogo.com.png" alt="">
+            </div>
+            <div class="skill-container">
+                <img src="./Images/figma-logo-E4E21D3AEA-seeklogo.com.png" alt="">
+            </div>
+            </div>
         </div>
     </section>
 
     <!--projects section starts-->
     <section class="projects" id="work">
         <div class="section-title">
-            <h2>My Projects</h2>
+            <h2 class="show-on-scroll">My Projects</h2>
         </div>
         <div class="projects-center">
-            <article class="project">
+            <article class="project show-on-scroll">
                 <div class="img-container">
                     <img class="project-img" src="./Images/Grocery List.png" alt="project">
                     <button class="view-btn"><a href="https://rikzgrocerylist.netlify.app/">View Live Site</a></button>
@@ -53,7 +85,7 @@
                 <h3>Grocery List</h3>
                 <h4>HTML5 CSS3 JS</h4>
             </article>
-            <article class="project">
+            <article class="project show-on-scroll">
                 <div class="img-container">
                     <img class="project-img" src="./Images/2020-07-07.png" alt="project">
                     <button class="view-btn"><a href="https://minimalistfashion.netlify.app/">View Live Site</a></button>
@@ -61,7 +93,7 @@
                 <h3>Clothing Brand</h3>
                 <h4>HTML5 CSS3</h4>
             </article>
-            <article class="project">
+            <article class="project show-on-scroll">
                 <div class="img-container">
                     <img class="project-img" src="./Images/BookList.png" alt="project">
                     <button class="view-btn"><a href="https://rikzbooklist.netlify.app/">View Live Site</a></button>
@@ -69,7 +101,7 @@
                 <h3>BookList App</h3>
                 <h4>HTML5 CSS3 JS</h4>
             </article>
-            <article class="project">
+            <article class="project show-on-scroll">
                 <div class="img-container">
                     <img class="project-img" src="./Images/travellandingpage.png" alt="project">
                     <button class="view-btn"><a href="https://mrmac.netlify.app/">View Live Site</a></button>
@@ -83,7 +115,7 @@
 
     <section class="banner" id="contact">
         <div class="content">
-            <h2>Contact<br>
+            <h2 class="show-on-scroll">Contact<br>
                 <br>
             <span class="info">Email: rikzrikaz@gmail.com<br>
             Phone: (+94)76 278 8630</span></h2>
@@ -107,7 +139,8 @@
 
     
 
-    <script src="./app.js"></script>   
+    <script src="./app.js"></script>  
+    <script src="./show-on-scroll.js"></script> 
 </body>
              <!--<a href="https://rikzgrocerylist.netlify.app/"><img src="./Images/Grocery List.png" alt=""></a>
             <a href="https://minimalistfashion.netlify.app/"><img src="./Images/2020-07-07.png" alt=""></a>

@@ -113,6 +113,24 @@
     color: white;
 }
 
+.parent-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-container {
+    max-width: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    background: black;
+    display: flex;
+    align-items: center;
+}
+
+.skill-container img {
+    max-width: 100%;
+}
+
 .content{
     max-width: 600px;
 }
@@ -227,6 +245,19 @@
     .project h3,
     .project h4 {
         font-size: 10px;
+    }
+    .parent-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20px, 30px));
+        grid-column-gap: 1.5rem;
+        grid-row-gap: 2rem;
+    }
+    .skill-container {
+        max-width: 100%;
+        padding: 2px 5px;
+    }
+    .skill-container img {
+        max-width: 100%;
     }
 }
 
