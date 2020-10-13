@@ -338,6 +338,7 @@ header .arrow-right {
     filter: invert(1);
 }
 
+
 header .arrow-right:hover {
     margin-left: 20px;
 }
@@ -346,3 +347,5 @@ header .arrow-right:hover {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 }
+
+
