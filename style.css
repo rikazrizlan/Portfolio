@@ -232,7 +232,6 @@
 
 .contact .banner form {
     margin-right: 80px;
-    align-self: center;
     margin-top: 100px;
 }
 
@@ -241,7 +240,8 @@
     padding: 10px 50px;
     border-radius: 10px;
     border: none;
-    background-color: #817979;
+    background-color: #fff;
+    text-align: left;
 }
 
 .contact .banner form label {
