@@ -159,7 +159,7 @@
     font-family: poppins;
 }
 
-.content a{
+.content button{
     position: relative;
     display: inline-block;
     margin-top: 20px;
@@ -171,12 +171,13 @@
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
+    border: none;
+    transition: 0.5s ease;
 }
 
-.content a:hover{
+.content button:hover{
     background-color: white;
     color: black;
-    transition: 0.3s;
 }
 
 .sci{
@@ -215,6 +216,56 @@
     transition: 2s ease;
 }
 
+/*Contact section */
+
+.contact .banner .txt-bx {
+    display: flex;
+    justify-content: stretch;
+    max-width: 100%;
+}
+
+.contact .banner h2 {
+    color: white;
+    font-size: 2em;
+    align-self: center;
+}
+
+.contact .banner form {
+    margin-right: 80px;
+    align-self: center;
+    margin-top: 100px;
+}
+
+.contact .banner form input {
+    margin: 20px 10px 10px 0;
+    padding: 10px 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: #817979;
+}
+
+.contact .banner form label {
+   color: white;
+   margin-top: 60px;
+}
+
+.contact .banner form .message {
+    border: none;
+    padding: 40px 50px;
+}
+
+.contact .banner form .submit-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.contact .banner form .submit-btn:hover {
+    background-color: #817979;
+}
+
 @media (max-width: 767px){
     
     .banner{
@@ -229,17 +280,13 @@
     #about p{
         font-size: 1em;
     }
-    #contact .info{
-        font-size: 0.6em;
-    }
-
     .banner p,
     .banner a{
         font-size: 1em;
     } 
     .sci{
         left: 40px;
-        bottom: 50px;
+        bottom: 200px;
         flex-direction: row;
     }
     .sci li a{
@@ -247,7 +294,7 @@
         margin-right: 10px;
     }
     .sci li a img{
-        max-width: 50%;
+        max-width: 30px;
     }
     .project h3,
     .project h4 {
@@ -266,8 +313,23 @@
     .skill-container img {
         max-width: 100%;
     }
-    .content a{
-        font-size: 0.9em;
+    .content button{
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 0.5em;
+        letter-spacing: 0.5px;
+        border: none;
+        transition: 0.5s ease;
+    }
+    .contact .banner .txt-bx {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        max-width: 80%;
+    } 
+    .contact .banner .txt-bx h2 {
+        font-size: 20px;
+        text-align: left;
     }
 }
 
