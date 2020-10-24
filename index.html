@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css" integrity="sha384-5QFXyVb+lrCzdN228VS3HmzpiE7ZVwLQtkt+0d9W43LQMzz4HBnnqvVxKg6O+04d" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./scroll.css">
@@ -116,17 +117,24 @@
         <div class="banner">
             <div class="txt-bx">
                 <h2 class="show-on-scroll">Let's get in touch !</h2>
-                <form netlify>
-                    <pre class="form-items show-on-scroll">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" class="name" placeholder="John Doe">
-                        <label for="name">Email</label>
-                        <input type="text" id="email" name="email" class="email" placeholder="johndoe@gmail.com">
-                        <label for="name">Message</label>
-                        <input type="text" id="messge" name="message" class="message" placeholder="Your Message here">
-                        <input type="submit" class="submit-btn">
-                    </pre>  
-                </form>
+                <div class="container">
+                    <form netlify>
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" name="name" class="form-control" value="">
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="text" name="email" class="form-control" value="">
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea name="message" class="form-control"></textarea>
+                        </div>
+                        <br>
+                        <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
             </div>
         </div>
 
